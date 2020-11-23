@@ -10,3 +10,7 @@
 * Imported the bowling pin, gave it a material
 
 ## Step 2: Player Movement and Camera Follow
+* Create PlayerMovement script
+    * Learn how to do Debug.Log()
+    * Learn how to use f at the end of floating point numbers (Example: 10.0f)
+* Create FollowPlayer script
