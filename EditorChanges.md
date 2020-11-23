@@ -8,3 +8,5 @@
 * Created the ball and alley materials
 * Changed the skybox to a solid color
 * Imported the bowling pin, gave it a material
+
+## Step 2: Player Movement and Camera Follow
