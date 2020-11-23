@@ -1,5 +1,5 @@
 # Editor Changes
-*All the changes we made in the editor, listed.*
+*All the changes we made in the **Unity** editor, listed.*
 
 ## Step 1: Creating Game Objects
 * Opened Unity and made a project
