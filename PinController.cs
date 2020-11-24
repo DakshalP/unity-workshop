@@ -35,6 +35,8 @@ public class PinController : MonoBehaviour
 
             Debug.Log("Tipped over");
 
+            FindObjectOfType<GameManager>();
+
         } else {
 
             Debug.Log("Not tipped over");
