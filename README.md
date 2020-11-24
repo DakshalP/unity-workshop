@@ -15,7 +15,7 @@
     * Learn how to use f at the end of floating point numbers (Example: 10.0f)
 * Create FollowPlayer script
 
-## Step 3: Handling Pin Tipping
+## Step 3: Handling Pin Collisions
 * Pin Controller Script
     * Introduce `GetComponent<>` and `OncollisionEnter`
     * Handle pin collision and check if it tipped
