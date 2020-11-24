@@ -23,9 +23,9 @@
 ## Step 4: Keeping Track of Score
 * Create a UI Text element (Right-Click > UI > Text)
 * GameManager Script
-* Use `FindObjectOfType<Gamemanager>` to call the add point method.
+* Use `FindObjectOfType<Gamemanager>` to call the add point method
 
-## Step 5: End-Game functionality
+## Step 5: End-Game Functionality
 * Use the SceneManagement library
 * Load the current scene to restart
 * Load the next scene to move on to the next level
