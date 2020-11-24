@@ -14,3 +14,8 @@
     * Learn how to do Debug.Log()
     * Learn how to use f at the end of floating point numbers (Example: 10.0f)
 * Create FollowPlayer script
+
+## Step 3: Handling Pin Tipping
+* Pin Controller Script
+    * Introduce `GetComponent<>` and `OncollisionEnter`
+    * Handle pin collision and check if it tipped
