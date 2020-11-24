@@ -31,6 +31,11 @@ public class PlayerMovement : MonoBehaviour
        if(Input.GetKeyDown("space")) {
            spacePressed = true;
        }
+
+       //step 5
+       if(gameObject.transform.position.y < -50) {
+           FindObjectOfType<GameManager>().EndGame();
+       }
    }
 
    //also called once per frame, but adjusts for different framerates
