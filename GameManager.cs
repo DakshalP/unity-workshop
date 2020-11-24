@@ -8,11 +8,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-   public Text scoreText;
+   Text scoreText;
 
    int scoreCount = 0;
 
    bool gameHasEnded = false;
+
+   void Start () {
+       scoreText = FindObjectOfType<Text>();
+   }
 
    public void AddPoint() {
        scoreCount++;
@@ -23,7 +27,16 @@ public class GameManager : MonoBehaviour
        if(!gameHasEnded) {
            gameHasEnded = true;
 
-           Invoke("Restart", 5);
+           //Invoke("Restart", 5);
+
+           if(scoreCount >= 6) {
+               scoreText.text = "Good Job!";
+               Invoke("NextLevel", 2);
+           }
+           else {
+               scoreText.text = "Try again.";
+               Invoke("Restart", 2);
+           }
        }
    }
 
@@ -32,5 +45,9 @@ public class GameManager : MonoBehaviour
 
        //a better way of doing it
        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+   }
+
+   void NextLevel() {
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
    }
 }
