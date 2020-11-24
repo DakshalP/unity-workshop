@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
    //game code
    public Rigidbody rb;
-   public float thrust = 40.0f;
+   public float thrust = 20.0f;
    public float sidewaysThrust = 400.0f;
 
    public bool spacePressed = false;
@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
    //also called once per frame, but adjusts for different framerates
    void FixedUpdate() {
        if(spacePressed) {
-           rb.AddForce(0, 0, thrust * Time.deltaTime, ForceMode.Impulse);
+           rb.AddForce(0, 0, thrust * Time.deltaTime, ForceMode.Acceleration);
        } else {
            if(Input.GetKey("d")) {
                 rb.AddForce(sidewaysThrust * Time.deltaTime, 0, 0);
