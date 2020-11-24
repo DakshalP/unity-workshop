@@ -4,7 +4,7 @@ public class PinController : MonoBehaviour
 {
     Transform t;
 
-    bool pinChecked = false;
+    bool pinTipped = false;
 
     void Start() {
         t = GetComponent<Transform>();
@@ -21,26 +21,24 @@ public class PinController : MonoBehaviour
     }
 
     void PinHit() {
-        if(pinChecked) {
-            return;
-        }
+        if(!pinTipped) {
+            //Debug.Log("Pin Hit")
 
-        pinChecked = true;
+            //check if tipped
+            float currentRotation = t.rotation.eulerAngles.x;
+            if( !(currentRotation < 10 || currentRotation > 350)) {
 
-        //Debug.Log("Pin Hit")
+                Debug.Log("Tipped over");
+                pinTipped = true;
 
-        //check if tipped
-        float currentRotation = t.rotation.eulerAngles.z;
-        if( !(currentRotation < 10 || currentRotation > 350)) {
+                FindObjectOfType<GameManager>().AddPoint();
 
-            Debug.Log("Tipped over");
+            } else {
 
-            FindObjectOfType<GameManager>().AddPoint();
+                Debug.Log("Not tipped over");
+                pinTipped = false;
 
-        } else {
-
-            Debug.Log("Not tipped over");
-
+            }
         }
     }
 }
