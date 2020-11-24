@@ -19,3 +19,8 @@
 * Pin Controller Script
     * Introduce `GetComponent<>` and `OncollisionEnter`
     * Handle pin collision and check if it tipped
+
+## Step 4: Keeping Track of Score
+* Create a UI Text element (Right-Click > UI > Text)
+* GameManager Script
+* Use `FindObjectOfType<Gamemanager>` to call the add point method.
