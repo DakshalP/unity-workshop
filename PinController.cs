@@ -35,7 +35,7 @@ public class PinController : MonoBehaviour
 
             Debug.Log("Tipped over");
 
-            FindObjectOfType<GameManager>();
+            FindObjectOfType<GameManager>().AddPoint();
 
         } else {
 
