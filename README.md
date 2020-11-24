@@ -24,3 +24,9 @@
 * Create a UI Text element (Right-Click > UI > Text)
 * GameManager Script
 * Use `FindObjectOfType<Gamemanager>` to call the add point method.
+
+## Step 5: End-Game functionality
+* Use the SceneManagement library
+* Load the current scene to restart.
+* Load the next scene to move on to the next level.
+    * Use the build index of the next level.
