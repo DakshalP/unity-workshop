@@ -27,6 +27,6 @@
 
 ## Step 5: End-Game functionality
 * Use the SceneManagement library
-* Load the current scene to restart.
-* Load the next scene to move on to the next level.
-    * Use the build index of the next level.
+* Load the current scene to restart
+* Load the next scene to move on to the next level
+    * Use the build index of the next level
